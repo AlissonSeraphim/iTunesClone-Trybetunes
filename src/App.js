@@ -21,6 +21,7 @@ class App extends React.Component {
       LoginName: '',
       isLoading: false,
       afterLoading: false,
+      artistInput: '',
     };
   }
 
@@ -49,10 +50,14 @@ class App extends React.Component {
       LoginName,
       afterLoading,
       isLoading,
+      artistInput,
     } = this.state;
 
     const limitCharacters = 3;
     const disableButton = LoginName.length < limitCharacters;
+
+    const limitCharactersArtist = 2;
+    const disableArtistButton = artistInput.length < limitCharactersArtist;
 
     return (
       <div>
@@ -70,7 +75,17 @@ class App extends React.Component {
           >
             { afterLoading && <Redirect to="/search" />}
           </Route>
-          <Route exact path="/search" component={ Search } />
+          <Route
+            exact
+            path="/search"
+            render={ () => (
+              <Search
+                artistInput={ artistInput }
+                disableArtistButton={ disableArtistButton }
+                onInputChange={ this.onInputChange }
+              />
+            ) }
+          />
           <Route exact path="/album/:id" component={ Album } />
           <Route exact path="/favorites" component={ Favorites } />
           <Route exact path="/profile" component={ Profile } />
