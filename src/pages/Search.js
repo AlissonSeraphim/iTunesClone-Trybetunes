@@ -12,6 +12,7 @@ class Search extends React.Component {
       onClickArtist,
       checkReady,
       getArray,
+      afterClear,
     } = this.props;
 
     return (
@@ -42,7 +43,8 @@ class Search extends React.Component {
               checkReady
               && (
                 <h2>
-                  {`Resultado de álbuns de: ${artistInput}`}
+                  { console.log(afterClear)}
+                  {`Resultado de álbuns de: ${afterClear}`}
                 </h2>
               )
             }
@@ -70,7 +72,7 @@ class Search extends React.Component {
                 </div>
               ))}
               {
-                (getArray.length === 0 && artistInput)
+                (getArray.length === 0 && afterClear)
               && <h1>Nenhum álbum foi encontrado</h1>
               }
             </div>
@@ -83,6 +85,7 @@ class Search extends React.Component {
 
 Search.propTypes = {
   artistInput: PropTypes.string.isRequired,
+  afterClear: PropTypes.string.isRequired,
   disableArtistButton: PropTypes.bool.isRequired,
   onInputChange: PropTypes.func.isRequired,
   onClickArtist: PropTypes.func.isRequired,

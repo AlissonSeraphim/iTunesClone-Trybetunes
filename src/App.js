@@ -25,6 +25,7 @@ class App extends React.Component {
       artistInput: '',
       checkReady: false,
       getArray: [],
+      afterClear: '',
     };
   }
 
@@ -41,7 +42,7 @@ class App extends React.Component {
       artistInput,
     } = this.state;
 
-    this.setState({ isLoading: true, afterLoading: false });
+    this.setState({ isLoading: true, afterLoading: false, afterClear: artistInput });
 
     const array = await searchAlbumsAPI(artistInput);
 
@@ -50,6 +51,7 @@ class App extends React.Component {
       afterLoading: true,
       checkReady: true,
       getArray: array,
+      artistInput: '',
     });
   };
 
@@ -73,6 +75,7 @@ class App extends React.Component {
       artistInput,
       checkReady,
       getArray,
+      afterClear,
     } = this.state;
 
     const limitCharacters = 3;
@@ -107,6 +110,7 @@ class App extends React.Component {
               onInputChange={ this.onInputChange }
               checkReady={ checkReady }
               getArray={ getArray }
+              afterClear={ afterClear }
             />
             ) }
           />
