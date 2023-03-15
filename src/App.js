@@ -11,6 +11,7 @@ import NotFound from './pages/NotFound';
 
 import { createUser } from './services/userAPI';
 import Loading from './pages/Loading';
+import searchAlbumsAPI from './services/searchAlbumsAPI';
 
 class App extends React.Component {
   constructor() {
@@ -22,6 +23,8 @@ class App extends React.Component {
       isLoading: false,
       afterLoading: false,
       artistInput: '',
+      checkReady: false,
+      getArray: [],
     };
   }
 
@@ -32,6 +35,23 @@ class App extends React.Component {
       [name]: target.value,
     });
   }
+
+  searchAlbuns = async () => {
+    const {
+      artistInput,
+    } = this.state;
+
+    this.setState({ isLoading: true, afterLoading: false });
+
+    const array = await searchAlbumsAPI(artistInput);
+
+    this.setState({
+      isLoading: false,
+      afterLoading: true,
+      checkReady: true,
+      getArray: array,
+    });
+  };
 
   onClickAction = async () => {
     const {
@@ -51,6 +71,8 @@ class App extends React.Component {
       afterLoading,
       isLoading,
       artistInput,
+      checkReady,
+      getArray,
     } = this.state;
 
     const limitCharacters = 3;
@@ -78,12 +100,14 @@ class App extends React.Component {
           <Route
             exact
             path="/search"
-            render={ () => (
-              <Search
-                artistInput={ artistInput }
-                disableArtistButton={ disableArtistButton }
-                onInputChange={ this.onInputChange }
-              />
+            render={ () => (isLoading ? <Loading /> : <Search
+              artistInput={ artistInput }
+              disableArtistButton={ disableArtistButton }
+              onClickArtist={ this.searchAlbuns }
+              onInputChange={ this.onInputChange }
+              checkReady={ checkReady }
+              getArray={ getArray }
+            />
             ) }
           />
           <Route exact path="/album/:id" component={ Album } />
