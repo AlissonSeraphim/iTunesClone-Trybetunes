@@ -43,13 +43,11 @@ class Search extends React.Component {
               checkReady
               && (
                 <h2>
-                  { console.log(afterClear)}
                   {`Resultado de álbuns de: ${afterClear}`}
                 </h2>
               )
             }
             <div>
-              {console.log(getArray)}
               { getArray.map((album) => (
                 <div className="eachCard" key={ album.collectionId }>
                   <p>{album.artistId}</p>

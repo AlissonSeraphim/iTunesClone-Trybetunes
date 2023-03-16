@@ -34,7 +34,6 @@ class Header extends React.Component {
     return (loadingStatus ? <Loading />
       : (
         <header data-testid="header-component">
-          <p> alguma coisa aqui</p>
           <p data-testid="header-user-name">
             O nome é:
             { pushedName }
