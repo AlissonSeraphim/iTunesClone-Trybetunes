@@ -3,24 +3,26 @@ import PropTypes from 'prop-types';
 import Header from './Header';
 import getMusics from '../services/musicsAPI';
 import MusicCard from './MusicCard';
+import { getFavoriteSongs } from '../services/favoriteSongsAPI';
+import Loading from './Loading';
 
 class Album extends React.Component {
   state = {
     getAlbum: [],
     artistBand: '',
     albumName: '',
+    getFavoriteCheck: false,
   };
 
   async componentDidMount() {
     const { match: { params: { id } } } = this.props;
 
-    // funciona mas não passa no teste proposto :c
-    // const { href } = window.location;
-    // const getUrl = href;
-    // const positionID = 28;
-    // const idAlbum = getUrl.slice(positionID);
+    this.setState({ getFavoriteCheck: true });
 
-    //  fetch
+    const favoriteSongs = await getFavoriteSongs(id);
+    console.log(favoriteSongs);
+
+    //  fetch getAlbum
     const arrayObjects = await getMusics(id);
     console.log(arrayObjects);
 
@@ -39,6 +41,7 @@ class Album extends React.Component {
       getAlbum: arrayObjects.slice(1),
       artistBand: artistas[0],
       albumName: album[0],
+      getFavoriteCheck: false,
     });
   }
 
@@ -47,22 +50,28 @@ class Album extends React.Component {
       getAlbum,
       artistBand,
       albumName,
+      getFavoriteCheck,
     } = this.state;
 
     return (
       <div data-testid="page-album">
         <Header />
-        <div>
-          <h2 data-testid="artist-name">
-            { artistBand }
-          </h2>
-          <h3 data-testid="album-name">
-            { albumName }
-          </h3>
-          <MusicCard
-            getAlbum={ getAlbum }
-          />
-        </div>
+        {
+          getFavoriteCheck ? <Loading />
+            : (
+              <div>
+                <h2 data-testid="artist-name">
+                  { artistBand }
+                </h2>
+                <h3 data-testid="album-name">
+                  { albumName }
+                </h3>
+                <MusicCard
+                  getAlbum={ getAlbum }
+                />
+              </div>
+            )
+        }
       </div>
     );
   }
