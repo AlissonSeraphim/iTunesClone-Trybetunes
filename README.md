@@ -7,6 +7,7 @@ Este é um projeto em React que implementa um player baseado no iTunes e Spotify
 
 - React
 - Componentes de Classe
+- Ciclo de Vida dos Componentes
 - BrowserRouter
 - JavaScript
 - API do iTunes-Apple
@@ -44,6 +45,7 @@ This is a React project that implements a player based on iTunes and Spotify. Th
 # Technologies Used
 - React
 - Class Components
+- Lifecycle Components
 - BrowserRouter
 - JavaScript
 - iTunes-Apple API
