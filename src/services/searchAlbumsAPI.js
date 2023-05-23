@@ -7,6 +7,8 @@ const searchAlbumsAPI = async (artist) => {
 
   const { results } = await APIResponse.json();
 
+  console.log('sou o resultado de getalbuns', results);
+
   const response = results.map(
     ({
       artistId,

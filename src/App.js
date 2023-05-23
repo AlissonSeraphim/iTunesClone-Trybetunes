@@ -7,10 +7,10 @@ import Album from './pages/Album';
 import Favorites from './pages/Favorites';
 import Profile from './pages/Profile';
 import ProfileEdit from './pages/ProfileEdit';
-import NotFound from './pages/NotFound';
+import NotFound from './components/NotFound';
 
 import { createUser } from './services/userAPI';
-import Loading from './pages/Loading';
+import Loading from './components/Loading';
 import searchAlbumsAPI from './services/searchAlbumsAPI';
 
 class App extends React.Component {
