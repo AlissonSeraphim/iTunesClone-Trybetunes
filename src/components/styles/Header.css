@@ -1,0 +1,188 @@
+.container {
+  background-color: white;
+  height: 720px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 250px;
+}
+
+.trybelogo {
+  height: 38.13px;
+  left: 40px;
+  position: absolute;
+  top: 62.82px;
+  width: 102.97px;
+}
+
+.tuneslogo {
+  height: 27.06px;
+  left: 87.58px;
+  position: absolute;
+  top: 102.24px;
+  width: 103.76px;
+}
+
+.phone {
+  height: 47.9px;
+  left: 152.32px;
+  position: absolute;
+  top: 33.59px;
+  width: 58.49px;
+}
+
+.stroke1 {
+  height: 8px;
+  left: 166px;
+  position: absolute;
+  top: 74.74px;
+  width: 9.54px;
+}
+
+.stroke2 {
+  height: 16px;
+  left: 166px;
+  position: absolute;
+  top: 70px;
+  width: 23.02px;
+}
+
+.stroke3 {
+  height: 25px;
+  left: 169px;
+  position: absolute;
+  top: 66px;
+  width: 31.66px;
+}
+
+.stroke4 {
+  height: 12.3px;
+  left: 184px;
+  position: absolute;
+  top: 72px;
+  width: 16.69px;
+}
+
+.strokeLeft {
+  height: 15px;
+  left: 154px;
+  position: absolute;
+  top: 70px;
+  width: 20.27px;
+}
+
+.strokeRight {
+  height: 15px;
+  left: 189px;
+  position: absolute;
+  top: 70px;
+  width: 20.27px;
+}
+
+.search {
+  color: #444955;
+  font-family: Epilogue , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  height: 16px;
+  left: 84px;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+  position: absolute;
+  text-transform: capitalize;
+  top: 277px;
+  width: 77px;
+}
+
+.favorite {
+  color: #444955;
+  font-family: Epilogue , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: 16px;
+  left: 84px;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+  position: absolute;
+  text-transform: capitalize;
+  top: 354px;
+  width: 75px;
+}
+
+.profile {
+  color: #444955;
+  font-family: Epilogue , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: 16px;
+  left: 84px;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+  position: absolute;
+  text-transform: capitalize;
+  top: 431px;
+  width: 42px;
+}
+
+.searchIcon {
+  bottom: 59.29%;
+  left: 3.12%;
+  position: absolute;
+  right: 95.22%;
+  top: 37.78%;
+}
+
+.favoriteIcon {
+  bottom: 48.61%;
+  left: 2.97%;
+  position: absolute;
+  right: 95.23%;
+  top: 48.19%;
+}
+
+.profileIcon {
+  bottom: 37.65%;
+  left: 2.97%;
+  position: absolute;
+  right: 95.08%;
+  top: 58.89%;
+}
+
+.profileHead {
+  bottom: 39.22%;
+  left: 5.65%;
+  position: absolute;
+  right: 95.7%;
+  top: 59.52%;
+}
+
+.name {
+  color: #444955;
+  font-family: Epilogue , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: 16px;
+  left: 93px;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+  position: absolute;
+  text-transform: capitalize;
+  top: 664px;
+  width: 83px;
+}
+
+.avatarIcon {
+  background-image: url('/src/images/avatarIcon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 19.608px;
+  height: 40px;
+  left: 40px;
+  position: absolute;
+  top: 652px;
+  width: 40px;
+}
