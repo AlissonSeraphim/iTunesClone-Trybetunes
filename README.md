@@ -19,6 +19,10 @@ Este é um projeto em React que implementa um player baseado no iTunes e Spotify
 - Player para preview da musica.
 - Páginas de perfil e favoritos em desenvolvimento.
 
+## Trabalho em andamento
+
+Por favor, tenha em mente que o trabalho de estilização ainda está em progresso. A interface da aplicação pode sofrer alterações e melhorias.
+
 ## Estrutura de Diretórios
 
 A estrutura de diretórios do projeto é a seguinte:
@@ -55,6 +59,10 @@ This is a React project that implements a player based on iTunes and Spotify. Th
 - Presentation of an artist/band's songs according to the album.
 - Player for music preview.
 - Profile and favorites pages under development.
+
+## Work in Progress
+
+Please note that the styling is still a work in progress. The application's interface may undergo changes and improvements.
 
 # Directory Structure
 The project directory structure is as follows:
