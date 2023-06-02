@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Header from '../components/Header';
 
+import './styles/Search.css';
+
 class Search extends React.Component {
   render() {
     const {
@@ -19,7 +21,7 @@ class Search extends React.Component {
       <div data-testid="page-search">
         <Header />
         <form>
-          <div>
+          <div className="searchInput-container">
             <label>
               Banda/Artista:
               <input
@@ -39,6 +41,8 @@ class Search extends React.Component {
             >
               Pesquisar
             </button>
+          </div>
+          <div className="searchAlbum-container">
             {
               checkReady
               && (
@@ -47,33 +51,31 @@ class Search extends React.Component {
                 </h2>
               )
             }
-            <div>
-              { getArray.map((album) => (
-                <div className="eachCard" key={ album.collectionId }>
-                  <p>{album.artistId}</p>
-                  <p>{album.artistName}</p>
-                  <p>{album.collectionId}</p>
-                  <p>{album.collectionName}</p>
-                  <p>{album.collectionPrice}</p>
-                  <img
-                    src={ album.artworkUrl100 }
-                    alt={ `Imagem do album: ${album.collectionName}` }
-                  />
-                  <p>{album.releaseDate}</p>
-                  <p>{album.trackCount}</p>
-                  <Link
-                    to={ `/album/${album.collectionId}` }
-                    data-testid={ `link-to-album-${album.collectionId}` }
-                  >
-                    About This Album
-                  </Link>
-                </div>
-              ))}
-              {
-                (getArray.length === 0 && afterClear)
+            { getArray.map((album) => (
+              <div className="eachCard" key={ album.collectionId }>
+                <p>{album.artistId}</p>
+                <p>{album.artistName}</p>
+                <p>{album.collectionId}</p>
+                <p>{album.collectionName}</p>
+                <p>{album.collectionPrice}</p>
+                <img
+                  src={ album.artworkUrl100 }
+                  alt={ `Imagem do album: ${album.collectionName}` }
+                />
+                <p>{album.releaseDate}</p>
+                <p>{album.trackCount}</p>
+                <Link
+                  to={ `/album/${album.collectionId}` }
+                  data-testid={ `link-to-album-${album.collectionId}` }
+                >
+                  About This Album
+                </Link>
+              </div>
+            ))}
+            {
+              (getArray.length === 0 && afterClear)
               && <h1>Nenhum álbum foi encontrado</h1>
-              }
-            </div>
+            }
           </div>
         </form>
       </div>
