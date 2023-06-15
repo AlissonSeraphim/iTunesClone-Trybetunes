@@ -1,8 +1,7 @@
 @media ( max-width : 799px ) {
 
-  .container {
+  .header-container {
     background: linear-gradient(123.66deg, #003be6 0 13%, #00d5e2 87% 100%);
-    border: 1px solid red;
     box-sizing: border-box;
     height: 10em;
     left: 0;
@@ -13,7 +12,6 @@
 
   .search-container {
     align-items: center;
-    border: 1px solid red;
     bottom: 0;
     color: #444955;
     display: flex;
@@ -25,7 +23,6 @@
 
   .favorite-container {
     align-items: center;
-    border: 1px solid red;
     bottom: 0;
     color: #444955;
     display: flex;
@@ -39,7 +36,6 @@
 
   .profile-container {
     align-items: center;
-    border: 1px solid red;
     bottom: 0;
     color: #444955;
     display: flex;
@@ -70,7 +66,7 @@
   }
 
   .phone {
-    left: 55%;
+    left: 12.35em;
     position: absolute;
     top: 0.3em;
   }
@@ -110,11 +106,121 @@
     position: absolute;
     top: 2.5em;
   }
-
-
 }
 
 @media ( min-width : 800px ) {
+
+  .header-container {
+    background: linear-gradient(123.66deg, #003be6 0 13%, #00d5e2 87% 100%);
+    box-sizing: border-box;
+    height: 10em;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100vw;
+  }
+
+  .search-container {
+    align-items: center;
+    border: 1px solid red;
+    bottom: 0;
+    color: #444955;
+    display: flex;
+    height: 2.5em;
+    justify-content: space-around;
+    position: absolute;
+    width: 10em;
+  }
+
+  .favorite-container {
+    align-items: center;
+    border: 1px solid red;
+    bottom: 0;
+    color: #444955;
+    display: flex;
+    height: 2.5em;
+    justify-content: space-around;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 10em;
+  }
+
+  .profile-container {
+    align-items: center;
+    border: 1px solid red;
+    bottom: 0;
+    color: #444955;
+    display: flex;
+    height: 2.5em;
+    justify-content: space-around;
+    position: absolute;
+    right: 0%;
+    width: 10em;
+  }
+
+  .profileHead {
+    bottom: 1.2em;
+    left: 1.87em;
+    position: absolute;
+  }
+
+  .trybelogo {
+    left: 55em;
+    position: absolute;
+    top: 1em;
+  }
+
+  .tuneslogo {
+    left: 62em;
+    position: absolute;
+    top: 3em;
+  }
+
+  .phone {
+    left: 72em;
+    position: absolute;
+    top: 1.3em;
+  }
+
+  .stroke1 {
+    left: 73.08em;
+    position: absolute;
+    top: 3.8em;
+  }
+
+  .stroke2 {
+    left: 73.5em;
+    position: absolute;
+    top: 3.4em;
+  }
+
+  .stroke3 {
+    left: 73.9em;
+    position: absolute;
+    top: 3.2em;
+  }
+
+  .stroke4 {
+    left: 74.3em;
+    position: absolute;
+    top: 3.57em;
+  }
+
+  .strokeLeft {
+    left: 72.7em;
+    position: absolute;
+    top: 3.4em;
+  }
+
+  .strokeRight {
+    left: 74.8em;
+    position: absolute;
+    top: 3.4em;
+  }
+}
+
+/* @media ( min-width : 800px ) {
 
   .container {
     background-color: white;
@@ -304,4 +410,4 @@
     top: 652px;
     width: 40px;
   }
-}
+} */

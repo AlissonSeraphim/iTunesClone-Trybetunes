@@ -46,7 +46,7 @@ class Header extends React.Component {
     return loadingStatus ? (
       <Loading />
     ) : (
-      <header className="container" data-testid="header-component">
+      <header className="header-container" data-testid="header-component">
         <div>
           <img src={ trybeLogo } alt="trybe logo" className="trybelogo" />
           <img src={ tunesLogo } alt="trybe logo" className="tuneslogo" />
