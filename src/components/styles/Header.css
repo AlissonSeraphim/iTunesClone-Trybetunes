@@ -1,10 +1,8 @@
 @media ( max-width : 799px ) {
 
   .container {
-
-    /* background: linear-gradient(123.66deg, rgba(0, 59, 229, 0.7) 0%,
-     rgba(0, 59, 229, 0.7) 13%,
-     rgba(0, 213, 226, 0.7) 87%, rgba(0, 213, 226, 0.7) 100%); */
+    background: linear-gradient(123.66deg, #003be6 0 13%, #00d5e2 87% 100%);
+    border: 1px solid red;
     box-sizing: border-box;
     height: 10em;
     left: 0;
@@ -13,40 +11,106 @@
     width: 100vw;
   }
 
-
   .search-container {
+    align-items: center;
     border: 1px solid red;
     bottom: 0;
     color: #444955;
     display: flex;
-    height: 2em;
+    height: 1.5em;
     justify-content: space-around;
     position: absolute;
-    width: 8em;
+    width: 6em;
   }
 
   .favorite-container {
+    align-items: center;
     border: 1px solid red;
     bottom: 0;
     color: #444955;
     display: flex;
-    height: 2em;
+    height: 1.5em;
     justify-content: space-around;
-    left: 25em;
+    left: 50%;
     position: absolute;
-    width: 8em;
+    transform: translateX(-50%);
+    width: 6em;
   }
 
   .profile-container {
+    align-items: center;
     border: 1px solid red;
     bottom: 0;
     color: #444955;
     display: flex;
-    height: 2em;
-    left: 45.3em;
+    height: 1.5em;
+    justify-content: space-around;
     position: absolute;
-    width: 8em;
+    right: 0%;
+    width: 6em;
   }
+
+  .profileHead {
+    bottom: 0.6em;
+    left: 0.89em;
+    position: absolute;
+  }
+
+  .trybelogo {
+    left: 8em;
+    position: absolute;
+    top: 1em;
+    transform: translateX(-50%);
+  }
+
+  .tuneslogo {
+    left: 10.5em;
+    position: absolute;
+    top: 4em;
+  }
+
+  .phone {
+    left: 55%;
+    position: absolute;
+    top: 0.3em;
+  }
+
+  .stroke1 {
+    left: 13.3em;
+    position: absolute;
+    top: 2.8em;
+  }
+
+  .stroke2 {
+    left: 13.79em;
+    position: absolute;
+    top: 2.5em;
+  }
+
+  .stroke3 {
+    left: 14.25em;
+    position: absolute;
+    top: 2.2em;
+  }
+
+  .stroke4 {
+    left: 14.66em;
+    position: absolute;
+    top: 2.65em;
+  }
+
+  .strokeLeft {
+    left: 12.9em;
+    position: absolute;
+    top: 2.5em;
+  }
+
+  .strokeRight {
+    left: 15.1em;
+    position: absolute;
+    top: 2.5em;
+  }
+
 
 }
 
