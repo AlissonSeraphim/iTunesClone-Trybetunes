@@ -4,7 +4,7 @@ import './styles/Loading.css';
 class Loading extends React.Component {
   render() {
     return (
-      <section className="container">
+      <section className="loading-container">
         <div className="lds-default">
           <div />
           <div />

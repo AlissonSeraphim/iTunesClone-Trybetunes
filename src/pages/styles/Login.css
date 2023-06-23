@@ -9,7 +9,10 @@
 
   .container-login {
     align-items: center;
-    background: linear-gradient(123.66deg, #003be5 12.08%, #00d5e2 86.52%);
+    background-image: url('../../images/container/BgFull.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -125,7 +128,10 @@
 
   .container-login {
     align-items: center;
-    background: linear-gradient(123.66deg, #003be5 12.08%, #00d5e2 86.52%);
+    background-image: url('../../images/container/BgFull.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -242,7 +248,10 @@
 
   .container-login {
     align-items: center;
-    background: linear-gradient(123.66deg, #003be5 12.08%, #00d5e2 86.52%);
+    background-image: url('../../images/container/BgFull.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     height: 100vh;
     justify-content: center;

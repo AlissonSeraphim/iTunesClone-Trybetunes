@@ -1,24 +1,21 @@
+.loading-container {
+  align-items: center;
+  background-image: url('../../images/container/BgFull.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
 h1 {
-  color: #003be5;
+  color: white;
   font-family: Epilogue , sans-serif;
   font-size: 48.92px;
   font-style: normal;
   font-weight: 400;
-  height: 50px;
-  left: 479.45px;
-  line-height: 50px;
-  position: absolute;
   text-align: center;
-  top: 403px;
-  width: 322px;
-}
-
-
-.lds-default {
-  display: inline-block;
-  height: 80px;
-  position: relative;
-  width: 80px;
 }
 
 .lds-default div {
