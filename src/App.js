@@ -42,7 +42,11 @@ class App extends React.Component {
       artistInput,
     } = this.state;
 
-    this.setState({ isLoading: true, afterLoading: false, afterClear: artistInput });
+    this.setState({
+      isLoading: true,
+      afterLoading: false,
+      afterClear: artistInput.toUpperCase(),
+    });
 
     const array = await searchAlbumsAPI(artistInput);
 

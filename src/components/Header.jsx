@@ -48,7 +48,7 @@ class Header extends React.Component {
           </p>
         </div>
         <div className="options-header">
-          <div className="search-container">
+          <div className="searchIcon-container">
             <img src={ searchIcon } alt="searchIcon" className="searchIcon" />
             <Link to="/search" className="search" data-testid="link-to-search">
               Search

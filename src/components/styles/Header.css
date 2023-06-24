@@ -10,7 +10,7 @@
     width: 100vw;
   }
 
-  .search-container {
+  .searchIcon-container {
     align-items: center;
     bottom: 0;
     color: #444955;
@@ -58,9 +58,12 @@
   }
 
   .name {
+    border: 2px solid white;
+    border-radius: 30%;
     color: white;
-    font-size: x-large;
+    font-size: large;
     left: 2%;
+    padding: 5px;
     position: absolute;
     top: 5%;
   }
@@ -79,7 +82,6 @@
   }
 
   .options-header {
-    border: 1px solid red;
     bottom: 0;
     display: flex;
     font-size: large;
@@ -101,10 +103,13 @@
   }
 
   .name {
+    border: 2px solid white;
+    border-radius: 30%;
     color: white;
-    font-size: x-large;
+    font-size: large;
     left: 5%;
+    padding: 5px;
     position: absolute;
-    top: 20%;
+    top: 10%;
   }
 }
