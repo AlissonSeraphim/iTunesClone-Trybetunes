@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-max-depth */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -48,16 +49,19 @@ class Search extends React.Component {
               {checkReady && (
                 <h2 className="album-from">{`Resultado de álbuns de: ${afterClear}`}</h2>
               )}
-              {getArray.map((album) => (
+              { getArray.map((album) => (
                 <div className="eachCard" key={ album.collectionId }>
                   <p>{`Artist ID: ${album.artistId}`}</p>
                   <p>{`Artist: ${album.artistName}`}</p>
-                  <p>{`Album ID: ${album.collectionId}`}</p>
-                  <p>{`Album: ${album.collectionName}`}</p>
-                  <p>{`Price: ${album.collectionPrice}$`}</p>
+                  <p>{`Álbum ID: ${album.collectionId}`}</p>
+                  <p>{`Álbum: ${album.collectionName}`}</p>
+                  {
+                    album.collectionPrice ? <p>{`Price: ${album.collectionPrice}$`}</p>
+                      : <p>Price: Unavailable</p>
+                  }
                   <img
                     src={ album.artworkUrl100 }
-                    alt={ `Imagem do album: ${album.collectionName}` }
+                    alt={ `Imagem do álbum: ${album.collectionName}` }
                   />
                   <p>{`Release Date: ${album.releaseDate}`}</p>
                   <p>{`N° Tracks: ${album.trackCount}`}</p>
@@ -65,7 +69,7 @@ class Search extends React.Component {
                     to={ `/album/${album.collectionId}` }
                     data-testid={ `link-to-album-${album.collectionId}` }
                   >
-                    About This Album
+                    About This Álbum
                   </Link>
                 </div>
               ))}

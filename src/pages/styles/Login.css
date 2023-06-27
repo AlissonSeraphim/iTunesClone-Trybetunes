@@ -24,6 +24,8 @@
     border-radius: 2em;
     box-shadow: 0 0 26px rgba(68, 73, 85, 0.2);
     height: 30em;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     width: 22em;
   }
@@ -143,6 +145,8 @@
     border-radius: 2em;
     box-shadow: 0 0 26px rgba(68, 73, 85, 0.2);
     height: 43em;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     width: 41em;
   }
@@ -263,6 +267,8 @@
     border-radius: 2em;
     box-shadow: 0 0 26px rgba(68, 73, 85, 0.2);
     height: 43em;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     width: 67em;
   }
