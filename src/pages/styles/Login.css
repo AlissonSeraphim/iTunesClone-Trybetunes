@@ -1,0 +1,371 @@
+/* .container-login {
+  background: linear-gradient(123.66deg, #003be5 12.08%, #00d5e2 86.52%);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+} */
+
+@media ( max-width : 500px ) {
+
+  .container-login {
+    align-items: center;
+    background-image: url('../../images/container/BgFull.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .forms-container {
+    background: white;
+    border-radius: 2em;
+    box-shadow: 0 0 26px rgba(68, 73, 85, 0.2);
+    height: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 22em;
+  }
+
+  .name-input {
+    border: 1px solid #003be5;
+    border-radius: 2em;
+    box-sizing: border-box;
+    height: 3em;
+    left: 1em;
+    position: absolute;
+    text-align: center;
+    top: 17em;
+    width: 24em;
+  }
+
+  .buttonLogin-input {
+    background: #003be5;
+    border-radius: 2em;
+    color: white;
+    height: 3em;
+    left: 1em;
+    position: absolute;
+    top: 21em;
+    width: 24em;
+  }
+
+  .trybelogo-login {
+    height: 10em;
+    left: 4em;
+    position: absolute;
+    top: 2rem;
+    width: 7em;
+  }
+
+  .tuneslogo-login {
+    height: 10em;
+    left: 10em;
+    position: absolute;
+    top: 4.7rem;
+    width: 7.5em;
+  }
+
+  .phone-login {
+    height: 10em;
+    left: 12.5em;
+    position: absolute;
+    top: 1em;
+    width: 4em;
+  }
+
+  .stroke1-login {
+    height: 0.7em;
+    left: 9rem;
+    position: absolute;
+    top: 7.1em;
+    width: 9.5em;
+  }
+
+  .stroke2-login {
+    height: 1.3em;
+    left: 9.5em;
+    position: absolute;
+    top: 6.8em;
+    width: 9.5em;
+  }
+
+  .stroke3-login {
+    height: 1.9em;
+    left: 10em;
+    position: absolute;
+    top: 6.6em;
+    width: 9.5em;
+  }
+
+  .stroke4-login {
+    height: 1em;
+    left: 10.5em;
+    position: absolute;
+    top: 7em;
+    width: 9.5em;
+  }
+
+  .strokeLeft-login {
+    height: 1em;
+    left: 8.5em;
+    position: absolute;
+    top: 7em;
+    width: 9.5em;
+  }
+
+  .strokeRight-login {
+    height: 1em;
+    left: 11em;
+    position: absolute;
+    top: 7em;
+    width: 9.5em;
+  }
+}
+
+@media ( min-width : 500px ) and ( max-width : 1199px ) {
+
+  .container-login {
+    align-items: center;
+    background-image: url('../../images/container/BgFull.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .forms-container {
+    background: white;
+    border-radius: 2em;
+    box-shadow: 0 0 26px rgba(68, 73, 85, 0.2);
+    height: 43em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 41em;
+  }
+
+  .name-input {
+    border: 1px solid #003be5;
+    border-radius: 2em;
+    box-sizing: border-box;
+    height: 4em;
+    left: 2em;
+    position: absolute;
+    text-align: center;
+    top: 28em;
+    width: 45em;
+  }
+
+  .buttonLogin-input {
+    background: #003be5;
+    border-radius: 2em;
+    color: white;
+    height: 4em;
+    left: 2em;
+    position: absolute;
+    top: 34em;
+    width: 45em;
+  }
+
+  .trybelogo-login {
+    height: 10em;
+    left: 9em;
+    position: absolute;
+    top: 7rem;
+    width: 12em;
+
+  }
+
+  .tuneslogo-login {
+    height: 10em;
+    left: 20.2em;
+    position: absolute;
+    top: 11.4rem;
+    width: 12.5em;
+  }
+
+  .phone-login {
+    height: 10em;
+    left: 23em;
+    position: absolute;
+    top: 5em;
+    width: 8em;
+  }
+
+  .stroke1-login {
+    height: 1.5em;
+    left: 21rem;
+    position: absolute;
+    top: 12.3em;
+    width: 9.4em;
+  }
+
+  .stroke2-login {
+    height: 2.8em;
+    left: 22em;
+    position: absolute;
+    top: 11.5em;
+    width: 9.5em;
+  }
+
+  .stroke3-login {
+    height: 3.6em;
+    left: 23em;
+    position: absolute;
+    top: 11em;
+    width: 9.7em;
+  }
+
+  .stroke4-login {
+    height: 1.8em;
+    left: 24em;
+    position: absolute;
+    top: 12.1em;
+    width: 9.5em;
+  }
+
+  .strokeLeft-login {
+    height: 2em;
+    left: 19.8em;
+    position: absolute;
+    top: 12em;
+    width: 9.5em;
+  }
+
+  .strokeRight-login {
+    height: 2em;
+    left: 25em;
+    position: absolute;
+    top: 12em;
+    width: 9.5em;
+  }
+}
+
+@media ( min-width : 1200px ) {
+
+  .container-login {
+    align-items: center;
+    background-image: url('../../images/container/BgFull.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .forms-container {
+    background: white;
+    border-radius: 2em;
+    box-shadow: 0 0 26px rgba(68, 73, 85, 0.2);
+    height: 43em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 67em;
+  }
+
+  .name-input {
+    border: 1px solid #003be5;
+    border-radius: 2em;
+    box-sizing: border-box;
+    height: 4em;
+    left: 3em;
+    position: absolute;
+    text-align: center;
+    top: 28em;
+    width: 75em;
+  }
+
+  .buttonLogin-input {
+    background: #003be5;
+    border-radius: 2em;
+    color: white;
+    height: 4em;
+    left: 3em;
+    position: absolute;
+    top: 34em;
+    width: 75em;
+  }
+
+  .trybelogo-login {
+    height: 10em;
+    left: 18em;
+    position: absolute;
+    top: 7rem;
+    width: 16em;
+  }
+
+  .tuneslogo-login {
+    height: 10em;
+    left: 32.2em;
+    position: absolute;
+    top: 12.4rem;
+    width: 15.5em;
+  }
+
+  .phone-login {
+    height: 10em;
+    left: 37em;
+    position: absolute;
+    top: 6em;
+    width: 9em;
+  }
+
+  .stroke1-login {
+    height: 1.5em;
+    left: 35rem;
+    position: absolute;
+    top: 13.6em;
+    width: 9.4em;
+  }
+
+  .stroke2-login {
+    height: 2.8em;
+    left: 36em;
+    position: absolute;
+    top: 12.9em;
+    width: 9.5em;
+  }
+
+  .stroke3-login {
+    height: 3.6em;
+    left: 37.1em;
+    position: absolute;
+    top: 12.4em;
+    width: 9.7em;
+  }
+
+  .stroke4-login {
+    height: 1.8em;
+    left: 39em;
+    position: absolute;
+    top: 13.5em;
+    width: 8.4em;
+  }
+
+  .strokeLeft-login {
+    height: 2.4em;
+    left: 34em;
+    position: absolute;
+    top: 13.1em;
+    width: 9.5em;
+  }
+
+  .strokeRight-login {
+    height: 2.4em;
+    left: 40em;
+    position: absolute;
+    top: 13.1em;
+    width: 8.8em;
+  }
+}
+

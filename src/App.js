@@ -10,7 +10,7 @@ import ProfileEdit from './pages/ProfileEdit';
 import NotFound from './pages/NotFound';
 
 import { createUser } from './services/userAPI';
-import Loading from './pages/Loading';
+import Loading from './components/Loading';
 import searchAlbumsAPI from './services/searchAlbumsAPI';
 
 class App extends React.Component {
@@ -42,7 +42,11 @@ class App extends React.Component {
       artistInput,
     } = this.state;
 
-    this.setState({ isLoading: true, afterLoading: false, afterClear: artistInput });
+    this.setState({
+      isLoading: true,
+      afterLoading: false,
+      afterClear: artistInput.toUpperCase(),
+    });
 
     const array = await searchAlbumsAPI(artistInput);
 
@@ -86,7 +90,6 @@ class App extends React.Component {
 
     return (
       <div>
-        <p>TrybeTunes</p>
         <Switch>
           <Route
             exact

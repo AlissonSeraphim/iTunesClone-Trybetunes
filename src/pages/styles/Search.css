@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+}
+
+@media ( max-width : 799px ) {
+
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100vw;
+  }
+
+  .searchAlbum-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  form {
+    align-items: flex-start;
+    background-image: url('../../images/container/BgFull.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .search-button {
+    background: linear-gradient(123.66deg, #003be5 12.08%, #00d5e2 86.52%);
+    border-radius: 10px;
+    color: white;
+    margin-left: 0.5em;
+    padding: 0.3em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .album-from {
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 3em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  label {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    margin-bottom: 10px;
+    margin-top: 0.5em;
+  }
+
+  input {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5em;
+    padding: 0.3em 0.5em;
+    text-align: center;
+  }
+
+  .form-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .eachCard {
+    align-items: center;
+    background-color: #00d5e2;
+    border-radius: 10px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+  }
+
+  .eachCard img {
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 0.625rem;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .eachCard p {
+    color: white;
+    margin-bottom: 0.313rem;
+  }
+
+}
+
+@media ( min-width : 800px ) {
+
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100vw;
+  }
+
+  .searchAlbum-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  form {
+    align-items: flex-start;
+    background-image: url('../../images/container/BgFull.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .search-button {
+    background: linear-gradient(123.66deg, #003be5 12.08%, #00d5e2 86.52%);
+    border-radius: 10px;
+    color: white;
+    margin-left: 0.5em;
+    padding: 0.3em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .album-from {
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 3em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  label {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    margin-bottom: 10px;
+    margin-top: 0.5em;
+  }
+
+  input {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5em;
+    padding: 0.3em 0.5em;
+    text-align: center;
+  }
+
+  .form-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .eachCard {
+    align-items: center;
+    background-color: #00d5e2;
+    border-radius: 10px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+  }
+
+  .eachCard img {
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 0.625rem;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .eachCard p {
+    color: white;
+    margin-bottom: 0.313rem;
+  }
+
+}
+
